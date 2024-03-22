@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+    <style>
+
+        .top{
+            background-color:whitesmoke;
+            position: fixed;
+            height:50PX;
+            width:400PX;
+            margin-top:-8px; 
+            z-index:1;    
+        }
+        .md{
+                height:300px;
+                width:400px;
+                position: relative;
+                /* top: 600px; */
+                overflow-y: scroll;
+                background-color:white;
+            }
+            ::-webkit-scrollbar{
+                width:0px;
+            }
+            .dp{
+                position: relative;
+                top: 10px;
+                left: 15px;    
+            }
+            .search{
+                position: relative;
+                left:20px;
+                top: 10px;    
+            }
+            .plus{
+                position: fixed;
+                top: 15px;
+                left: 320px;
+                 }
+            .name{
+                position: relative;
+                bottom: 15px;
+                left:170px;
+                font-size: 20px;
+            }
+            .dot {
+                 height: 9px;
+                 width: 9px;
+                 position: relative;  
+                 left:360px;
+                 bottom: 37px;
+                 background-color:lightslategray;
+                 border-radius: 200%;
+                 display: inline-block;
+                 
+                }
+                .total{
+                    overflow-x: hidden;
+
+                    }
+            .bar{
+                    height: 30px;
+                    width: 400px;
+                    background-color:white;
+                    position: relative;
+                    bottom: -50px;
+                }
+                .name1{
+                background-color:lightsteelblue;
+                position: relative;
+                width: 30px;
+                border-radius: 25px;
+                text-align: center;
+                left: 20px;
+                top:5px;
+            }
+            .name2{
+                background-color:lightsteelblue;
+                position: relative;
+                width: 55px;
+                border-radius: 25px;
+                text-align: center;
+                left: 75px;
+                bottom: 13px;
+            }
+            .name3{
+                position: relative;
+                bottom:35px;
+                left:150px;
+            }
+            .name4{
+                background-color:lightsteelblue;
+                position: relative;
+                width: 75px;
+                border-radius: 25px;
+                text-align: center;
+                left: 200px;
+                bottom: 53px;
+            }
+            .name5{
+                background-color:lightsteelblue;
+                position: relative;
+                width: 55px;
+                border-radius: 25px;
+                text-align: center;
+                left: 310px;
+                bottom: 70px;
+            }
+            .line{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:65px;
+                left:1px;
+                width: 400px;
+            }
+            .dp1{
+                position: relative;
+                left: 10px;
+                bottom: -55px;;
+            }
+            .name6{
+                position: relative;
+                bottom: -18px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot1{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: -25px;
+                right: -55px;
+            }
+            .new1{
+                position: relative;
+                bottom: -17px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat1{
+                position: relative;
+                top: -15px;
+                left: 340px;
+            }
+            .line1{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:5px;
+                left:1px;
+                width: 400px;
+            }
+            .dp2{
+                position: relative;
+                left: 10px;
+                 /* bottom: px;; */
+            } 
+            .name7{
+                position: relative;
+                bottom: 35px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot2{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 30px;
+                right: -55px;
+            }
+            .new2{
+                position: relative;
+                bottom: 40px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat2{
+                position: relative;
+                top: -70px;
+                left: 340px;
+            }
+            .line2{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:60px;
+                left:1px;
+                width: 400px;
+            }
+            .dp3{
+                position: relative;
+                left: 10px;
+                 bottom: 55px;;
+            } 
+            .name8{
+                position: relative;
+                bottom: 95px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot3{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 90px;
+                right: -55px;
+            }
+            .new3{
+                position: relative;
+                bottom: 98px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat3{
+                position: relative;
+                top: -125px;
+                left: 340px;
+            }
+            .line3{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:115px;
+                left:1px;
+                width: 400px;
+            }
+            .dp4{
+                position: relative;
+                left: 10px;
+                bottom: 110px;;
+            } 
+            .name9{
+                position: relative;
+                bottom: 145px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot4{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 140px;
+                right: -55px;
+            }
+            .new4{
+                position: relative;
+                bottom: 148px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat4{
+                position: relative;
+                top: -180px;
+                left: 340px;
+            }
+            .line4{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:170px;
+                left:1px;
+                width: 400px;
+            }
+            .dp5{
+                position: relative;
+                left: 10px;
+                bottom: 165px;;
+            } 
+            .name10{
+                position: relative;
+                bottom: 200px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot5{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 196px;
+                right: -55px;
+            }
+            .new5{
+                position: relative;
+                bottom: 204px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat5{
+                position: relative;
+                top: -240px;
+                left: 340px;
+            }
+            .line5{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:220px;
+                left:1px;
+                width: 400px;
+            }
+            .dp6{
+                position: relative;
+                left: 10px;
+                bottom: 215px;;
+            } 
+            .name11{
+                position: relative;
+                bottom: 250px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot6{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 245px;
+                right: -55px;
+            }
+            .new6{
+                position: relative;
+                bottom: 253px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat6{
+                position: relative;
+                top: -290px;
+                left: 340px;
+            }
+            .line6{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:270px;
+                left:1px;
+                width: 400px;
+            }
+            .dp7{
+                position: relative;
+                left: 10px;
+                bottom: 266px;;
+            } 
+            .name12{
+                position: relative;
+                bottom: 300px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot7{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 297px;
+                right: -55px;
+            }
+            .new7{
+                position: relative;
+                bottom: 305px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat7{
+                position: relative;
+                top: -340px;
+                left: 340px;
+            }
+            .line7{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:320px;
+                left:1px;
+                width: 400px;
+            }
+            .dp8{
+                position: relative;
+                left: 10px;
+                bottom: 315px;;
+            } 
+            .name13{
+                position: relative;
+                bottom: 350px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot8{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 347px;
+                right: -55px;
+            }
+            .new8{
+                position: relative;
+                bottom: 355px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat8{
+                position: relative;
+                top: -390px;
+                left: 340px;
+            }
+            .line8{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:370px;
+                left:1px;
+                width: 400px;
+            }
+            .dp9{
+                position: relative;
+                left: 10px;
+                bottom: 365px;;
+            } 
+            .name14{
+                position: relative;
+                bottom: 400px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot9{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 395px;
+                right: -55px;
+            }
+            .new9{
+                position: relative;
+                bottom: 402px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat9{
+                position: relative;
+                top: -440px;
+                left: 340px;
+            }
+            .line9{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:420px;
+                left:1px;
+                width: 400px;
+            }
+            .dp10{
+                position: relative;
+                left: 10px;
+                bottom: 410px;;
+            } 
+            .name15{
+                position: relative;
+                bottom: 450px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot10{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 445px;
+                right: -55px;
+            }
+            .new10{
+                position: relative;
+                bottom: 453px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat10{
+                position: relative;
+                top: -490px;
+                left: 340px;
+            }
+            .line10{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:470px;
+                left:1px;
+                width: 400px;
+            }
+            .dp11{
+                position: relative;
+                left: 10px;
+                bottom: 460px;;
+            } 
+            .name16{
+                position: relative;
+                bottom: 500px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot11{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 492px;
+                right: -55px;
+            }
+            .new11{
+                position: relative;
+                bottom: 500px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat11{
+                position: relative;
+                top: -540px;
+                left: 340px;
+            }
+            .line11{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:520px;
+                left:1px;
+                width: 400px;
+            }
+            .dp12{
+                position: relative;
+                left: 10px;
+                bottom: 510px;;
+            } 
+            .name17{
+                position: relative;
+                bottom: 550px;
+                left: 55px;
+                font-size: 16px;
+            }
+            .dot12{
+                border: 2px solid red;
+                width:2px;
+                border-width: 3px;
+                position: relative;
+                bottom: 543px;
+                right: -55px;
+            }
+            .new12{
+                position: relative;
+                bottom: 550px;
+                right: -65px;
+                font-size: 10px;
+            }
+            .chat12{
+                position: relative;
+                top: -590px;
+                left: 340px;
+            }
+            .line12{
+                border: 1px solid lightgrey;
+                position: relative;
+                height: 0px;
+                bottom:570px;
+                left:1px;
+                width: 400px;
+            }
+         .base{
+           height: 40px;
+           width: 400px;
+           background-color:whitesmoke;
+           /* margin-top: 420px; */
+           position: fixed;
+           bottom: 350px;
+           
+         }
+         .location{
+            position: relative;
+            left:20px;
+            top:5px;
+         }
+       .symbol{
+          position: relative;
+          left: 95px;
+          bottom: 25px;
+       }
+       .camera{
+        position: relative;
+        left:185px;
+        bottom: 58px;
+       }
+       .people{
+         position: relative;
+         left:270px;
+         bottom: 90px;
+       }
+       .play{
+        position: relative;
+        left:345px;
+        bottom: 120px;
+       }
+      .end{
+        text-align: center;
+        font-size: 16px;
+      }
+        
+    </style>
+</head>
+<body>
+<div class="md">
+        <div class="top">
+            <img class="dp" height="30" width="40" style="border-radius: 250%;" src="../asserts/snapdp1.jpg">
+            <img  class="search" height="25" width="35" style="border-radius: 250%;" src="../asserts/search.png">
+            <div class="name">Chat</div>
+            <img class="plus" height="25" width="35" style="border-radius: 10%;" src="../asserts/plus.png">
+            <div ><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+    <div class="total">
+        <div class="bar">
+            <div class="name1">All</div>
+            <div class="name2">Unread</div>
+            <div class="name3">🔥</div>
+            <div class="name4">Unreplied</div>
+            <div class="name5">groups</div>
+            <div class="line"></div> 
+
+        </div>
+        <div class="msg1">
+            <div class="dp1"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name6"><b>vinila</b></div>
+            <div class="dot1"></div>
+            <div class="new1">New snap</div>
+            <div class="chat1"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line1"></div>  
+        </div>
+        <div class="msg2">
+            <div class="dp2"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name7"><b>Gayathri</b></div>
+            <div class="dot2"></div>
+            <div class="new2">New snap</div>
+            <div class="chat2"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line2"></div>  
+        </div>
+        <div class="msg3">
+            <div class="dp3"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name8"><b>Kalyani</b></div>
+            <div class="dot3"></div>
+            <div class="new3">New snap</div>
+            <div class="chat3"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line3"></div>  
+        </div>
+        <div class="msg4">
+            <div class="dp4"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name9"><b>Gouthami</b></div>
+            <div class="dot4"></div>
+            <div class="new4">New snap</div>
+            <div class="chat4"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line4"></div>  
+        </div>
+        <div class="msg5">
+            <div class="dp5"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name10"><b>Bhavitha</b></div>
+            <div class="dot5"></div>
+            <div class="new5">New snap</div>
+            <div class="chat5"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line5"></div>  
+        </div>
+        <div class="msg6">
+            <div class="dp6"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name11"><b>Navya</b></div>
+            <div class="dot6"></div>
+            <div class="new6">New snap</div>
+            <div class="chat6"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line6"></div>  
+        </div>
+       
+        <div class="msg7">
+            <div class="dp7"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name12"><b>Latha</b></div>
+            <div class="dot7"></div>
+            <div class="new7">New snap</div>
+            <div class="chat7"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line7"></div> 
+            <div class="end">Chats are loading...</div>  
+        </div>
+        <div class="msg8">
+            <div class="dp8"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name13"><b>Shravya</b></div>
+            <div class="dot8"></div>
+            <div class="new8">New snap</div>
+            <div class="chat8"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line8"></div>   
+        </div>
+        <div class="msg9">
+            <div class="dp9"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name14"><b>Harika</b></div>
+            <div class="dot9"></div>
+            <div class="new9">New snap</div>
+            <div class="chat9"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line9"></div>  
+        </div>
+        <div class="msg10">
+            <div class="dp10"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name15"><b>Namitha</b></div>
+            <div class="dot10"></div>
+            <div class="new10">New snap</div>
+            <div class="chat10"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line10"></div>  
+        </div>
+        <div class="msg11">
+            <div class="dp11"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name16"><b>Amulya</b></div>
+            <div class="dot11"></div>
+            <div class="new11">New snap</div>
+            <div class="chat11"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line11"></div>  
+        </div>
+        <div class="msg12">
+            <div class="dp12"><img height="40" width="40" style="border-radius: 250%;" src="../asserts/snapchatdp2.jpg"></div>
+            <div class="name17"><b>Lavanya</b></div>
+            <div class="dot12"></div>
+            <div class="new12">New snap</div>
+            <div class="chat12"><img height="25" width="35" style="border-radius: 250%;" src="../asserts/chaticon1.png"></div>
+            <div class="line12"></div>
+        </div>
+    </div>    
+    <div class="base">
+        <div class="location"><img height="25" width="30" style="border-radius: 250%;" src="../asserts/locationicon.png"></div>
+        <div class="symbol"><img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/topic.png" alt="topic"/></div>
+        <div class="camera"><img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/48/camera--v1.png" alt="camera--v1"/></div>
+        <div class="people"><img width="25" height="25" src="https://img.icons8.com/tiny-glyph/16/racism.png" alt="racism"/></div>
+        <div class="play"><img width="30" height="30" src="https://img.icons8.com/parakeet-line/48/play.png" alt="play"/></div>
+     </div> 
+</div>    
+</body>
+</html>
